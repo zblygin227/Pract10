@@ -1,0 +1,28 @@
+﻿<Window x:Class="Pract10.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Pract10"
+        mc:Ignorable="d"
+        Title="Практическая работа №10" Height="491" Width="335" ResizeMode="NoResize">
+    <Grid >
+        <GroupBox Header="Исходный массив" Margin="10,13,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Height="110" Width="300">
+            <Grid>
+                <Label Content="Введите количество элементов:" Margin="14,5,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30" Width="200"/>
+                <TextBox x:Name="inputItemsCount" Margin="219,5,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30" Width="60"/>
+                <Button Content="Создать и заполнить" HorizontalAlignment="Center" Margin="5,45,0,0" VerticalAlignment="Top" Height="30" Width="265" Click="Создать_Click" />
+            </Grid>
+        </GroupBox>
+        <Button Content="Очистить" HorizontalAlignment="Left" Height="30" Margin="13,352,0,0" VerticalAlignment="Top" Width="297" Click="Отчистить_Click" />
+        <Button Content="О программе" HorizontalAlignment="Left" Height="30" Margin="13,387,0,0" VerticalAlignment="Top" Width="147" Click="О_Программе_Click" />
+        <Button Content="Выход" HorizontalAlignment="Left" Height="30" Margin="168,387,0,0" VerticalAlignment="Top" Width="142" Click="Выход_Click" />
+        <Label Content="Исходный массив:" HorizontalAlignment="Left" Margin="13,121,0,0" VerticalAlignment="Top"/>
+        <ListBox x:Name="currentData" Margin="13,147,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Height="65" Width="297"/>
+        <Label Content="Кол-во положительных чисел:" HorizontalAlignment="Left" Margin="13,235,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="positiveNumbers" Margin="13,261,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30" Width="297"/>
+        <Label Content="Кол-во отрицательных чисел:" HorizontalAlignment="Left" Margin="13,291,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="negativeNumbers" Margin="13,317,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30" Width="297"/>
+        <Button Content="Найти" HorizontalAlignment="Center" Margin="0,217,0,0" VerticalAlignment="Top" Height="25" Width="265" Click="Найти_Click" />
+    </Grid>
+</Window>
